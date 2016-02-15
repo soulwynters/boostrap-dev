@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+html.ltr .ss_samsung .footer .flag-fr {margin-left: 10px;}
+.ss_samsung .footer .flag-fr {background: url('/common/next/img/flag-fr.jpg'); background-size:100%; width: 30px;height: 20px;margin-top: -3px;display: -moz-inline-stack;display: inline-block;vertical-align: middle;zoom: 1;}
+.ss_samsung .footer .googleico {float: none; display: table-cell; vertical-align: middle; color: #d34836; margin-right: 15px; font-size: 1.25rem;}
+.ss_samsung .footer a.googleico:hover{color:#b33c2d;}
+
+@media screen and (min-width:1025px){
+.header-wrap .header-pc .header-info{margin:0 86px 0 40px}
+.header-wrap .header-pc .header-search{display:none;position:absolute;float:none;top:0;right:-255px;width:255px;margin-top:0;z-index:20}
+.header-wrap .header-pc .nav-open .header-search{display:block}
+.header-wrap .header-pc .search-form{background:none;width:auto;border:1px solid #dadee1}
+.header-wrap .header-pc .header-btn-search{display:block;position:absolute;right:40px;top:10px;width:30px;height:30px;color:#fff;line-height:30px;text-align:center}
+.header-wrap .header-pc .header-search.is-show,.header-search.is-show{position:static;display:block;width:100%;padding:10px 20px;box-sizing:border-box;background-color:#f2f2f2;border-bottom:1px solid #dadee1}
+.header-wrap .header-pc .header-search.is-show{right:20px}
+}
+
+.header-btn-search .icon-search{display:inline-block;height:14px;width:15px;background:url(/common/img/ico-menu.svg) no-repeat;background-size:15px 11px;vertical-align:middle;font-size:1px;line-height:1px;color:transparent}
+.header-btn-search .icon-search{width:14px;background:url(/common/img/ico-search-m.svg) no-repeat;background-size:14px 14px}
+.no-svg .icon-search,{background:url(/common/img/svg-ir.png) no-repeat}
+

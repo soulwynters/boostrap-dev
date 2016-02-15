@@ -1,0 +1,506 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family:'sssB';
+    src:url('../font/samsungsharpsans-bold_v2.eot');
+    src:url('../font/samsungsharpsans-bold_v2.eot?#iefix') format('embedded-opentype'),
+    url('../font/samsungsharpsans-bold_v2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'sssM';
+    src:url('../font/samsungsharpsans-medium_v2.eot');
+    src:url('../font/samsungsharpsans-medium_v2.eot?#iefix') format('embedded-opentype'),
+    url('../font/samsungsharpsans-medium_v2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'sssR';
+    src:url('../font/samsungsharpsans-regular_v2.eot');
+    src:url('../font/samsungsharpsans-regular_v2.eot?#iefix') format('embedded-opentype'),
+    url('../font/samsungsharpsans-regular_v2.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:'FontAwesome';
+    src:url('../font/fontawesome-webfont.eot?v=4.3.0');
+    src:url('../font/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),
+    url('../font/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
+    url('../font/fontawesome-webfont.woff?v=4.3.0') format('woff'),
+    url('../font/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* default */
+body {font-family:'sssR',sans-serif;font-size:12px;line-height:1.3;color:#4b4c4c;background:#fff;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;}
+article,aside,details,figcaption,figure,footer,header,nav,section,summary{display:block;margin:0;padding:0;}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, select, p, button {margin:0; padding:0}
+html {font-family:sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:100%; line-height:1.2;}
+a { background: transparent;text-decoration:none; -webkit-tap-highlight-color:transparent;}
+ul, ol, li {list-style:none}
+b, strong { font-weight:bold; }
+i,em,address,optgroup{ font-style:normal;font-weight:normal}
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary { display: block; margin:0; padding:0 }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+svg:not(:root) {overflow: hidden;}
+img { border: 0; }
+[hidden], template { display: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, legend {overflow: hidden;position: absolute;width:1px;height: 1px;margin:-1px;padding:0;border:0;clip:rect(0 0 0 0);}
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; background:none; border:0; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+dfn { font-style: italic; }
+abbr[title] {border-bottom: 1px dotted;}
+mark {background: #ff0;color: #000;}
+code,kbd,pre,samp {font-family: monospace, serif;font-size: 1em;}
+pre {white-space: pre-wrap;}
+q {quotes: "\201C" "\201D" "\2018" "\2019";}
+small {font-size: 80%;}
+sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+fieldset {margin:0;padding:0;border:0;}
+
+/* ::: Util :::  */
+.sr-only {overflow:hidden;position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;font-size:1px;line-height:1;}
+
+/* layout */
+#wrap {position:relative;margin:0 auto;min-width:320px;max-width:1920px;color:#1a1a1a;}
+
+/* local Navigation */
+.l-lnbWrap {position:relative;height:60px;box-sizing:border-box;}
+.l-lnbWrap * {box-sizing:border-box;}
+/*.l-lnb {display:block;position:absolute;top:0;left:0;z-index: 30;width:100%; height:60px; border-bottom: 1px solid #c6c6c6; background-image:url('../common/promotions/galaxy/gears2/lnb_bg.png'); }*/
+.l-lnb {display:block;position:absolute;top:0;left:50%;z-index: 30;width:1920px; height:60px;margin-left:-960px; border-bottom: 1px solid #c6c6c6; background-image:url('../common/promotions/galaxy/gears2/lnb_bg.png'); }
+.l-lnb-logo {display:block;position:absolute;top:20px;left:20px;z-index:5;width:106px;height:21px;}
+.l-lnb-logo:after {content:"";position:absolute;left:0;top:0;width:100%;height:100%;background:url('../common/promotions/galaxy/gears2/logo_samsung_gears2.png') no-repeat;background-size:100%;}
+.l-lnb-toggle {display:none;z-index:5;}
+
+.l-lnbGroup {position:relative;z-index:0;height:100%;text-align:center;}
+.l-lnb-listWrap {display:inline;}
+.lnb-wrap {display:inline-block;}
+.l-lnb-list {display:inline-block;padding:22px 0;vertical-align: top;}
+.l-lnb-item {display:inline-block;margin:0 5px;vertical-align: top;}
+.l-lnb-item a {padding:0 10px;font-family: "sssB",sans-serif;font-size:15px;color:#999;text-transform: uppercase;}
+.l-lnb-item.is-active a {color:#333;}
+
+.l-lnb-item--buynow {position:relative;z-index:5;top:16px;}
+.l-lnb-item--buynow a {padding:0 23px;height:28px;line-height:32px;background-color:#10309d;border-radius:15px;font-size:14px;color:#fff;}
+/*@media screen and (min-width:0\0){ 
+    .l-lnb-item--buynow a { padding:0 23px;height:28px; }
+    .l-lnb-item--buynow a span { line-height:32px; } 
+}*/
+/*.l-lnb-item--buynow a.active{background-color:#cfd6eb}*/
+
+.l-lnb-bar {visibility:hidden;position:absolute;bottom:-1px;left:0;display:inline-block;width:100px;height:4px;background:#3c3c9d;}
+
+/*@media only screen and (max-width:1279px) {
+    .l-lnb-item {margin:0 15px;}
+}*/
+@media only screen and (max-width:1920px) {
+    .l-lnb { left:0;width:100%;margin-left:0;}
+}
+
+@media (min-width:1024px) and (max-width:1399px) {
+    .l-lnb-logo { float:left;position:static;width:13%;margin-top:20px; }
+    .l-lnb-logo:after { display:block;position:static;margin-left:23px;width:106px;max-height:21px; }
+    .l-lnbGroup { position:static;float:left;width:87%;text-align:center; }
+    .lnb-wrap .l-lnb-item { margin:0 -3px; }
+	.l-lnb-list {display:inline-block;padding:22px 0;vertical-align: top;}
+	.l-lnb-item a {padding:0 7px;font-family: "sssB",sans-serif;font-size:13px; text-transform: uppercase;}
+	.l-lnb-item.is-active a {color:#333;}
+}
+
+@media only screen and (max-width:1023px) {
+	.l-lnbWrap {height:135px; }
+    .l-lnb {height:135px;border-bottom-width:0}
+    .l-lnb-logo {top:29px;left:34px;width:154px;height:30px;}
+    .l-lnb-listWrap {position:relative;top:86px;display:block;width:100%;height:50px;overflow:hidden;border-bottom:1px solid #c6c6c6;text-align:left;-webkit-overflow-scrolling:touch; }
+    .lnb-wrap { display:block;width:100%;overflow:auto;overflow-y:hidden; background-image:url('../common/promotions/galaxy/gears2/lnb_bg.png');}
+    .l-lnb-list {display:inline-block;font-size:0;white-space:nowrap; }
+    li.l-lnb-item{display:inline-block;margin:0;padding:0 20px;}
+
+    .l-lnb-list li:first-child {border-top:0}
+    .l-lnb-item--buynow {position:absolute;top:20px;right:0;}
+    .l-lnb-item--buynow a {padding:0 20px;height:46px;line-height:50px;border-radius:24px;font-size:20px;}
+    .l-lnb-bar { display:none; }
+    li.l-lnb-item.is-active { padding:0 20px 5px;border-bottom:4px solid #3c3c9d; }*/
+}
+/*@media screen and (min-width:0\0) and (max-width:1023px) { 
+    .l-lnb-item--buynow a { padding:0 20px;height:48px; }
+    .l-lnb-item--buynow a span { line-height:55px; } 
+}*/
+
+
+@media screen and (max-device-width: 640px){body{-webkit-text-size-adjust:none;}}
+
+
+@media only screen and (max-width:720px) {
+    .l-lnbWrap {height:59px;}
+    .l-lnb {height:34px}
+    .l-lnb-logo {top:13px;left:17px;width:70px;height:21px;}
+    .l-lnb-toggle {top:10px;right:10px;width:23px;height:23px;}
+	
+    .l-lnb-listWrap{top:34px;height:34px;}
+    .l-lnb-listWrap:before,
+    .l-lnb-listWrap:after {position:absolute;left:0;bottom:0;width:15px;height:33px;content:'';background:url('../common/promotions/galaxy/gears2/bg_subnav_sidemask.png') no-repeat -15px 0;background-size:30px 100%;z-index:3;pointer-events:none;-webkit-transform:translate3d(0,0,0);}
+    .l-lnb-listWrap:after { left:auto;right:0;background-position:0 0; }
+    .l-lnb-list{padding:8px 0 16px;overflow:visible;}
+    .l-lnb-item a{padding:0; font-size:12px;}
+
+    .l-lnb-item--buynow { top:10px;right:-2px;}
+   .l-lnb-item--buynow a { padding:0 5px;height:21px;line-height:20px; border-radius:12px;font-size:6px!important; width:50px;} 
+    /*.m_chrome .l-lnb-item--buynow a { padding:0 13px;height:21px; line-height:23px; }
+    .m_chrome .l-lnb-item--buynow a span {display:inline-block;  line-height:23px; }*/
+	
+    li.l-lnb-item{margin:0;padding:0 8px;width:auto;}
+    li.l-lnb-item:first-child { padding-left:17px !important; }
+    li.l-lnb-item.is-active { padding:0 8px 7px; }
+    .l-lnb-bar {visibility:visible;bottom:-1px;left:0;}
+}
+/*@media screen and (min-width:0\0) and (max-width:720px) { 
+    .l-lnb-item--buynow a { padding:0 13px;height:21px;}
+    .l-lnb-item--buynow a span {line-height:21px} 
+}*/
+/* //local Navigation */
+
+.contents {position:relative;z-index:0;font-family: "sssM", sans-serif;box-sizing:border-box;}
+.contents *,
+.contents *:before,
+.contents *:after {box-sizing:border-box;}
+
+
+/***********************************
+* [COMMON] Footer _ Page Navigation ( Prev, Next )
+***********************************/
+.storeLink {padding:26px 0 34px;background:url("../common/promotions/galaxy/gears2/store_bg.gif") no-repeat center center;background-size:cover;} /*150922*/
+.storeLink:after {content:"";display:block;clear:both}
+.storeLink-group {
+    position:relative;
+    padding:0 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size:20px;
+    letter-spacing: -0.025em;
+} /*150922*/
+.storeLink-group-online {  padding-left:104px;  border-left:none; }
+.storeLink-group-support {  padding-left:104px;  border-left:none; }
+.storeLink-group-offline {} /*150922*/
+.storeLink-group:before {content:"";display:block;float:left;margin:12px 48px 0 0;} /*150922*/
+
+.storeLink-group-tit {position:relative;display:block;font-size:30px;font-family: "sssB",sans-serif;} /*150922*/
+.storeLink-group-online .storeLink-group-tit:before {
+    left:-114px;
+    width:65px;
+    height:55px;
+    background:url("../common/promotions/galaxy/gears2/ico_cart.png") no-repeat 0 0;
+}
+.storeLink-group-support .storeLink-group-tit:before {
+    left:-114px;
+    top:5px;
+    width:64px;
+    height:50px;
+    background:url("../common/promotions/galaxy/gears2/ico_support.png") no-repeat 0 0;
+}
+.storeLink-group-offline:before {
+    left:-93px;
+    width:93px;
+    height:88px;
+    background:url("../common/promotions/galaxy/gears2/ico_wordmap.png") no-repeat 0 0;
+} /*150922*/
+
+.storeLink-group-txt {margin:0 0 0.7em !important;font-size:0.9em;font-family: "sssM",sans-serif;}
+.storeLink-group-link {position:relative;margin-right:1.5em;font-size:0.8em;color:#b89748;}
+.storeLink-group-link:active,
+.storeLink-group-link:visited,
+.storeLink-group-link:hover {color:#b89748;}
+.storeLink-group-link:before {content:"";display:inline-block;width:1.25em;height:1.25em;margin-right:0.75em;background:url("../common/promotions/galaxy/gears2/ico_external_link.png") no-repeat 0 50%;background-size:100% 100%;vertical-align: middle;}
+/*.storeLink-group-link:after {content:"";display:inline-block;width:0.6363em;height:0.6875em;margin:0 1.5em 0 1em;background:url("../common/promotions/galaxy/gears2/ico_link_arrow_r.png") no-repeat 0 50%;background-size:100% 100%;vertical-align: middle;} 150922 삭제*/
+
+.quickNavigation {padding:7.8125% 4.166666%;background:#f9f9f9;font-size:20px;}
+.quickNavigation:after {content:"";display:block;clear:both;}
+.quickNavigation-btn {display:block;padding:0 63px;font-family: "sssB",sans-serif;}
+.quickNavigation-btn-prev {float:left;text-align:left;}
+.quickNavigation-btn-next {float:right;text-align:right;}
+.quickNavigation-indicator {display:block;margin-bottom:0.5em;font-size:1em;color:#7e7e7e;line-height:1.6;}
+.quickNavigation-name {position:relative;display:block;font-size:2.4em;color:#292929;line-height:1;text-transform: capitalize;}
+.quickNavigation-name:after {content:"";position:absolute;bottom:0;width:0.47916666em;height:0.833333em;background-repeat:no-repeat;background-size:100% 100%}
+
+.quickNavigation-btn-prev .quickNavigation-name:after {left:-64px;background-image:url("../common/promotions/galaxy/gears2/btn_pageArrow_prev.png");background-position:0 100%;}
+.quickNavigation-btn-next .quickNavigation-name:after {right:-64px;background-image:url("../common/promotions/galaxy/gears2/btn_pageArrow_next.png"); background-position:100% 100%;}
+
+@media only screen and (max-width: 1023px) {
+    .storeLink-group {padding:25px 0 33px;font-size:16px;}
+
+    .storeLink-group-online:before {top:30px;left:20px;}
+    .storeLink-group-offline:before {top:37px;left:20px;}
+
+    .storeLink-group-tit {padding-left:150px;}
+    .storeLink-group-online .storeLink-group-tit { padding-left:110px; }
+    .storeLink-group-txt {padding-left:150px;}
+    .storeLink-group-online .storeLink-group-txt { padding-left:110px; }
+    .storeLink-group-link {padding-left:150px;}
+    .storeLink-group-online .storeLink-group-link { padding-left:110px; }
+
+    .quickNavigation {font-size:16px;}
+    .quickNavigation-btn {padding:0 40px;}
+    .quickNavigation-btn-prev .quickNavigation-name:after {left:-50px;}
+    .quickNavigation-btn-next .quickNavigation-name:after {right:-50px;}
+}
+
+@media only screen and (max-width: 767px) {
+    .storeLink-group-tit,
+    .storeLink.offline-type .storeLink-group-tit { font-size:14px; }
+    .storeLink-group-txt { font-size:14px; }
+    .storeLink-group-link {font-size:10px; }
+    .storeLink-group-link:before {width:13px;height:13px;}
+
+    .storeLink-group-online:before {top:30px;left:6px;width:35px;height:25px;background-size:100% 100%; }
+    .storeLink-group-offline:before {top:30px;left:6px;width:53px;height:48px;background-size:100% 100%;}
+    .storeLink.offline-type .storeLink-group { padding:0 6px; }
+    .storeLink.offline-type .storeLink-group-offline:before {margin:0 13px 0 0;width:63px;height:58px;background-size:100% 100%;}
+
+    .storeLink-group-tit {padding-left:66px;}
+    .storeLink-group-online .storeLink-group-tit { padding-left:50px; }
+    .storeLink-group-txt {padding-left:66px;}
+    .storeLink-group-online .storeLink-group-txt { padding-left:50px; }
+    .storeLink-group-link {padding-left:66px;}
+    .storeLink-group-online .storeLink-group-link { padding-left:50px; }
+
+    .quickNavigation {padding:40px 20px;font-size:10px;}
+    .quickNavigation-btn {padding:0 20px;}
+    .quickNavigation-name {font-size:14px;}
+    .quickNavigation-name:after {width:10px;height:17px;}
+    .quickNavigation-btn-prev .quickNavigation-name:after {left:-20px;}
+    .quickNavigation-btn-next .quickNavigation-name:after {right:-20px;}
+
+}
+
+
+
+/* sCheck */
+.sCheck-checkbox,
+.sCheck-radio {position:absolute;width:1px;height:1px;-moz-appearance:none;-webkit-appearance:none;opacity:0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";z-index:-1;margin:3px;outline:none;}
+.sCheck-label {cursor:pointer;margin:0 30px;}
+.sCheck-label.sCheck--focusing {outline:1px dotted #767676;}
+.sCheck-label-checkbox {position:relative;padding-left:32px;font-size:18px; }
+.sCheck-label-checkbox:before {content:""; position:absolute;top:-8px;left:0;display:inline-block; width:32px; height:32px; margin-left:-15px; vertical-align:top; background:url('../common/promotions/galaxy/gears2/sCheck_check_off.png') no-repeat;}
+.sCheck-label-checkbox.sCheck--checked:before {background-image:url('../common/promotions/galaxy/gears2/sCheck_check_on.png');}
+@media (min-width:768px) and (max-width:1200px) {
+    .sCheck-label-checkbox {padding-left:10px; font-size:12px}
+    .sCheck-label-checkbox:before {top:-4px;width:16px;height:16px;background-size:16px 16px;}
+}
+
+@media only screen and (max-width:767px){
+    .sCheck-label-checkbox {padding-left:10px; font-size:12px}
+    .sCheck-label-checkbox:before {top:-4px;width:16px;height:16px;background-size:16px 16px;}
+}
+/* //sCheck */
+
+
+
+/* 
+[Module] CirCle ColorChip
+
+<div class="mod-chipPager">
+    <a class="mod-chipPager-dot gold" href="#"><span class="sr-only">Gold</span></a>
+    <a class="mod-chipPager-dot gray" href="#"><span class="sr-only">Gray</span></a>
+</div>
+*/
+.mod-chipPager {font-size:0;}
+.mod-chipPager-dot {position:relative;z-index:6;display:inline-block;width:1em;height:1em;margin:0.3em 0.5em 0.3em 0.25em;border-radius:50%;cursor:pointer;font-size:32px;}
+.mod-chipPager-dot:before {content:"";display:block;position:absolute;top:50%;left:50%;z-index:1;width:1.5em;height:1.5em;border-radius:50%;border-color:inherit;border-width:1px;border-style:solid;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0, 0);
+    -moz-transform: translate(-50%, -50%) scale(0, 0);
+    -ms-transform: translate(-50%, -50%) scale(0, 0);
+    -o-transform: translate(-50%, -50%) scale(0, 0);
+}
+.mod-chipPager-dot:hover:before,
+.mod-chipPager-dot.active:before {
+    -webkit-transform: translate(-50%, -50%) scale(1, 1);
+    -moz-transform: translate(-50%, -50%) scale(1, 1);
+    -ms-transform: translate(-50%, -50%) scale(1, 1);
+    -o-transform: translate(-50%, -50%) scale(1, 1);
+    transform: translate(-50%, -50%) scale(1, 1);
+}
+.mod-chipPager-dot.gold {background:#cab081;border-color:#cab081;}
+.mod-chipPager-dot.black {background:#000;border-color:#000;}
+.mod-chipPager-dot.gray {background:#898989;border-color:#898989}
+.mod-chipPager-dot.white {background:#fff;border-color:#dadada}
+.mod-chipPager-dot.white:after {content:"";display:block;position:absolute;width:100%;height:100%;border-radius: 50%;border:1px solid #dadada;}
+.mod-chipPager-dot.blue {background:#3459dc;border-color:#3459dc;}
+.mod-chipPager-dot.red {background:#cc0000;border-color:#cc0000;}
+.mod-chipPager-dot.topaz {background:#00cce0;border-color:#00cce0;}
+.mod-chipPager-dot.pink {background:#ff4f95;border-color:#ff4f95;}
+
+@media screen and (max-width:767px){
+    .mod-chipPager-dot {font-size:20px;}
+    .mod-chipPager-dot:hover:before {opacity:0;}
+    .mod-chipPager-dot.active:before {opacity:1;}
+}
+
+/***
+* Round Button
+
+.mod-button  :  base (required)
+.mod-button-m :
+
+
+ <a class="mod-button mod-button--large" href="#">View More</a>
+ <a class="mod-button mod-button--large mod-button--blue" href="#">View More</a>
+ <a class="mod-button mod-button--upper" href="#">View More</a>
+*/
+
+.mod-button {
+    display:inline-block;
+    height:3.2em;
+    padding:0 3em;
+    background-color:#fff;
+    border:1px solid #292929;
+    border-radius:1.8em;
+    line-height:3.3em;
+    font-size:20px;
+    color:#292929;
+    text-align:center;
+    vertical-align: middle;
+}
+.mod-button:hover {
+    color:#fff;
+    background:#333;
+}
+.mod-button--large {
+    height:3.6em;
+    line-height:3.8em;
+    text-transform: uppercase;
+}
+
+.mod-button--blue {border:1px solid #3c3c9d;color:#fff;background-color:#3c3c9d;text-transform: uppercase;}
+.mod-button--blue:hover {border-color:#28287c;color:#fff;background-color:#28287c;color:#fff;text-transform: uppercase;}
+
+@media screen and (max-width:1024px) {
+    .mod-button {line-height:3.2em;font-size:16px;}
+}
+@media screen and (max-width:767px) {
+    .mod-button {font-size: 12px;}
+}
+
+
+/* preview-location-banner */
+.preview-location-banner-group {overflow:hidden;position:relative; display:block;width:100%;height:0;padding-bottom:20.83333333333333%;text-align:center;background:url('../common/promotions/galaxy/gears2/bg_global_banner.jpg')0 0 no-repeat;background-size:100% auto;}
+.preview-location-banner-group .preview-location-txt-box {position:absolute; top:50%; left:50%; width:100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.preview-location-banner-group .preview-location-tit {font-size:48px;font-family:'sssB';color:#292929;}
+.preview-location-banner-group .preview-location-tit em {display:block;}
+.preview-location-banner-group .preview-location-txt {font-size:24px;color:#7e7e7e;margin-bottom:1em;}
+.preview-location-banner-group .preview-location-btn {color:#fff;font-size:20px;background:#3c3c9d;
+	height:3em;
+	line-height:3.3em;
+    padding:0 2.6em 0 2.5em;
+    border-radius:1.8em;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.preview-location-banner-group .preview-location-btn:hover {background:#28287c;color:#fff}
+.preview-location-banner-group .preview-location-btn .btn-txt {margin-right:.5em;}
+.preview-location-banner-group .preview-location-btn .btn-arrow {display:inline-block;width:8px;height:15px;background:url('../common/promotions/galaxy/gears2/bg_global_arrow.png') 50% 50% no-repeat;}
+
+@media only screen and (max-width:1919px)  {
+	.preview-location-banner-group .preview-location-tit {font-size:32px;}
+	.preview-location-banner-group .preview-location-txt {font-size:18px;}
+	.preview-location-banner-group .preview-location-btn {font-size:16px;}
+}
+@media (min-width:1024px) and (max-width:1279px) {
+	.preview-location-banner-group .preview-location-tit {font-size:28px;}
+	.preview-location-banner-group .preview-location-txt {font-size:14px;}
+	.preview-location-banner-group .preview-location-btn {font-size:14px;}
+}
+@media (min-width:768px) and (max-width:1023px) {
+	.preview-location-banner-group .preview-location-tit {font-size:20px;}
+	.preview-location-banner-group .preview-location-txt {font-size:12px;}
+	.preview-location-banner-group .preview-location-btn {font-size:12px;}
+}
+@media only screen and (max-width:767px) {
+	.preview-location-banner-group {padding-bottom:83.83311603650587%;background:url('../common/promotions/galaxy/gears2/bg_global_banner_m.jpg')0 0 no-repeat;background-size:100% auto;}
+	.preview-location-banner-group .preview-location-tit {padding:0 5%; font-size: 24px;}
+	.preview-location-banner-group .preview-location-txt {padding:0 5%;font-size:13px;}
+	.preview-location-banner-group .preview-location-btn {
+		font-size: 16px;
+		height:3em;
+		line-height:3.3em;
+		padding:0 2.5em 0 2.5em;
+		border-radius:1.8em;
+	}
+	.preview-location-banner-group .preview-location-btn .btn-arrow {width:5px;height:11px;background:url('../common/promotions/galaxy/gears2/bg_global_arrow_m.png') 50% 50% no-repeat;}
+}
+
+/*
+[COMMON]
+ Store Search Modal-popup
+ in Footer Page Navigation
+*/
+.ly-findstore {display:none;position:fixed;top:0;left:0;z-index:9999;width:100%;height:100%;padding:10px;background:rgba(0,0,0,.5);box-sizing: border-box;}
+.ly-findstore-body {
+    position:relative;top:50%;left:50%;
+    max-width:560px;width:100%;height:520px;
+    max-height:85%;
+    box-sizing:border-box;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.ly-findstore-iframe::-webkit-scrollbar {
+    width: .4em;
+}
+.ly-findstore-iframe::-webkit-scrollbar,
+.ly-findstore-iframe::-webkit-scrollbar-thumb {
+    overflow:visible;
+    border-radius: 4px;
+}
+.ly-findstore-iframe::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.2);
+}
+
+.ly-findstore-iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+.ly-findstore-body .closeshopLayer {position:absolute;top:-40px;right:0;z-index:10;display:block;width:25px;height:25px;font-size:0;background:url("../common/promotions/galaxy/gears2/btn_layer_close.png") no-repeat 0 0;background-size: 100% 100%;}
+
+@media only screen and (max-width: 720px){
+.l-lnb-item--shop {
+    top: 10px;
+    right: 60px;
+}}
+@media (min-width: 721px) and (max-width:1023px) {
+    .l-lnb-item--shop {right:170px;}
+   
+}
