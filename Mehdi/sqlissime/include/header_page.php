@@ -11,6 +11,7 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="<?php echo $cfg['Live_Site']; ?>" title="Accueil SQLissime">Accueil</a></li>
+							<li><a href="<?php echo $cfg['Live_Site']; ?>" title="Présentation SQLissime">Présentation</a></li>
 							<li>
 								<a href="<?php echo $cfg['Live_Site']; ?>/entreprise/developpement.php" title="Accueil SQLissime">D&eacute;veloppement</a>
 								<ul>
@@ -32,6 +33,7 @@
 									<li><a href="<?php echo $cfg['Live_Site']; ?>/entreprise/formation.php#htmlcss">HTML / CSS Javascript</a></li>
 								</ul>
 							</li>
+							<li><a href="<?php echo $cfg['Live_Site']; ?>" title="Financement Formation CIF SQLissime">CIF</a></li>
 							<li>
 								<a href="<?php echo $cfg['Live_Site']; ?>/entreprise/marketing.php" title="SQLissime Marketing">Marketing</a>
 								<ul>
