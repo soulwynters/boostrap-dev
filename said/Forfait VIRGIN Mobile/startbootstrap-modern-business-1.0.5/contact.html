@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="accueil.html">
 				<img class="img-responsive img-hover" src="pictures\virgin-logo.png" alt="">
 				</a>
             </div>
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">A propos</a>
+                        <a href="about.html">À propos</a>
                     </li>
                     <li class="active">
                         <a href="contact.html">Contact</a>
@@ -78,7 +78,7 @@
                     <small>Contact</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="accueil.html">Accueil</a>
                     </li>
                     <li class="active">Contact</li>
                 </ol>
@@ -91,34 +91,63 @@
             <!-- Map Column -->
             
             <!-- Contact Details Column -->
-            <div class="col-md-4 detailcontact">
-                <h3>Contact Details</h3>
-				
-                <p>
-                  Par courrier:<br/> 
-				  Service Client<br>
-				  Virgin Mobile<br/>
-				  CS10701<br/>
-			      35507 VITRE CEDEX<br>
-                </p>
-				<br/>
-				<p>
-				<i class="fa fa-phone"></i> 
-                    <abbr title="Phone"> </abbr></p>
-				 <p> Depuis votre Mobile: 846</p>
-				 <p> Depuis vorte téléphone fixe: 0825 311 411</p>
-				 <p>0.15€ /min +prix d'un appel.</p>
-				 <p> Vous pouvez contacter également le 0 978 979 846 depuis un téléphone fixe. Le prix de l'appel varie selon l'opérateur.</p>
-				 <p>La mise ne attente est gratuite jusquà la mise en relation avec un conseiller clientèle</p>
-				</p>
-				<br/>
-				<br/>
-				
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: du lundi au samedi de 8h à 21h.</p>
+            <div class="col-md-6 detailcontact">
+                
 					
                 
+             <div class="row">
+            <!-- Map Column -->
+            
+            <!-- Contact Details Column -->
+            <div class="col-md-4">
+               
+                <p><i class="fa fa-envelope-o"></i> 
+                    
+                </p>
+               
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Contact Form -->
+        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Envoyez nous un message</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Nom:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Numéro de téléphone:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Adresse-email:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+
+        </div>
+
             </div>
         </div>
         <!-- /.row -->
