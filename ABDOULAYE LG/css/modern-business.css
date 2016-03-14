@@ -9,7 +9,8 @@
 html,
 body {
     height: 100%;
-    background-color: #DDD;
+    background-color: #fff;
+	background-image:url(img/images (5).jpg);
 }
 
 body {
@@ -95,4 +96,7 @@ footer {
 .container{
     text-align: justify;
 
+}
+.thumbnail{
+background-color:;
 }
